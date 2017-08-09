@@ -240,7 +240,10 @@ module.exports = {
         ],
         'no-multi-spaces': [
             'error',
-            { exceptions: { Property: true } }
+            { 
+                ignoreEOLComments: true,
+                exceptions: { Property: true } 
+            }
         ],
         'no-multi-str'      : 'error',
         'no-new'            : 'error',
